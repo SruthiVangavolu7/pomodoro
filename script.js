@@ -14,7 +14,8 @@ const todoStorageKey = "pomodoro_todo_entries";
 // Set your Spotify app client ID here before using Change Music.
 const SPOTIFY_CLIENT_ID = "a7bea2fb1297462eb4922c063e481582";
 // Must exactly match one Redirect URI configured in your Spotify app settings.
-const SPOTIFY_REDIRECT_URI = "http://127.0.0.1:5500/index.html";
+// Uses the current page URL so it works on deployed domains like Vercel.
+const SPOTIFY_REDIRECT_URI = `${window.location.origin}${window.location.pathname}`;
 const SPOTIFY_SCOPES = [
   "streaming",
   "user-read-email",
