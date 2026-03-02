@@ -155,7 +155,7 @@ textarea {
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 700;
   letter-spacing: 0.04em;
-  transform: translate(20px, -300px);
+  transform: translate(30px, -300px);
 }
 
 .controls {
@@ -265,14 +265,14 @@ textarea {
   width: 280px;
   height: auto;
   display: block;
-  transform: translate(-70px, -560px);
+  transform: translate(-50px, -560px);
 }
 
 .change-music-asset {
-  width: 220px;
+  width: 160px;
   height: auto;
   display: block;
-  transform: translate(-15px, -560px);
+  transform: translate(-130px, -560px);
 }
 
 .music-link-button {
