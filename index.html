@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pomodoro study helper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="tracker-sidebar" aria-label="Session tracker">
+        <section class="sidebar-section todo-section" aria-label="Todo list">
+          <h2 class="tracker-title">todo:</h2>
+          <form id="todoForm" class="todo-form">
+            <input
+              id="todoInput"
+              class="todo-input"
+              type="text"
+              placeholder="add a task..."
+              maxlength="120"
+            />
+            <button id="todoAddButton" class="todo-add-button" type="submit">add</button>
+          </form>
+          <ul id="todoList" class="todo-list"></ul>
+        </section>
+
+        <section class="sidebar-section tracker-section">
+          <h2 class="tracker-title">tracker:</h2>
+          <ul id="trackerList" class="tracker-list" aria-live="polite"></ul>
+        </section>
+      </aside>
+
+      <main class="main-panel">
+        <h1 id="statusText" class="status-text">ready to start?</h1>
+
+        <div class="boombox-wrap">
+          <img
+            id="boomboxImage"
+            class="boombox-image"
+            src="boombox.PNG"
+            alt="Boombox illustration"
+          />
+          <img class="speaker-image speaker-left" src="speakers.PNG" alt="" aria-hidden="true" />
+          <img class="speaker-image speaker-right" src="speakers.PNG" alt="" aria-hidden="true" />
+        </div>
+
+        <p id="timerText" class="timer-text" aria-live="assertive">25:00</p>
+
+        <div class="controls">
+          <button id="mainButton" class="btn btn-primary" type="button" aria-label="START">
+            <img
+              id="mainButtonImage"
+              class="main-button-asset"
+              src="start.PNG"
+              alt=""
+              aria-hidden="true"
+            />
+            <span id="mainButtonText" class="visually-hidden">START</span>
+          </button>
+        </div>
+
+        <audio id="lofiAudio" loop preload="auto">
+          <source src="lofimusic.mp3" type="audio/mpeg" />
+        </audio>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
