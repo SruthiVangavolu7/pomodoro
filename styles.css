@@ -107,12 +107,13 @@ textarea {
   font-size: clamp(1.7rem, 2.3vw, 2.2rem);
   font-weight: 700;
   margin-top: 20px;
+  transform: translate(23px, 0px);
 }
 
 .boombox-wrap {
   position: relative;
-  width: min(164vw, 1040px);
-  transform: translate(90px, -200px);
+  width: min(131.2vw, 832px);
+  transform: translate(90px, -180px);
 }
 
 .boombox-image {
@@ -125,19 +126,19 @@ textarea {
 .speaker-image {
   position: absolute;
   display: none;
-  width: 330px;
+  width: 180px;
   height: auto;
   transform-origin: 50% 50%;
 }
 
 .speaker-left {
-  left: 10%;
-  bottom: 23%;
+  left: 15%;
+  bottom: 29%;
 }
 
 .speaker-right {
-  right: 27%;
-  bottom: 23%;
+  right: 30.8%;
+  bottom: 29.5%;
 }
 
 .boombox-wrap.playing .speaker-image {
@@ -154,7 +155,7 @@ textarea {
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 700;
   letter-spacing: 0.04em;
-  transform: translate(20px, -350px);
+  transform: translate(20px, -300px);
 }
 
 .controls {
@@ -261,10 +262,21 @@ textarea {
 }
 
 .main-button-asset {
-  width: 360px;
+  width: 280px;
   height: auto;
   display: block;
-  transform: translate(-70px, -660px);
+  transform: translate(-70px, -560px);
+}
+
+.change-music-asset {
+  width: 220px;
+  height: auto;
+  display: block;
+  transform: translate(-15px, -560px);
+}
+
+.music-link-button {
+  opacity: 0.96;
 }
 
 .btn.text-mode {
@@ -315,7 +327,7 @@ textarea {
   }
 
   .speaker-image {
-    width: 84px;
+    width: 70px;
   }
 
   .boombox-wrap {
@@ -329,5 +341,10 @@ textarea {
   .main-button-asset {
     width: 420px;
     max-width: 82vw;
+  }
+
+  .change-music-asset {
+    width: 300px;
+    max-width: 70vw;
   }
 }
